@@ -4,6 +4,8 @@
 
     <inherits name='com.google.gwt.user.User'/>
 
-    <entry-point class='client.Math'/>
+    <entry-point class='client.MathDemo'/>
+
+    <source path="client" />
 
 </module>
