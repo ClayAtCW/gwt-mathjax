@@ -3,6 +3,12 @@
 <head>
     <title>Math Application</title>
     <link rel="stylesheet" href="MathDemo.css">
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+    <script>
+        function jaxIt(element) {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, element]);
+        }
+    </script>
 </head>
 <body>
 <script type="text/javascript" language="javascript" src="MathDemo/MathDemo.nocache.js"></script>

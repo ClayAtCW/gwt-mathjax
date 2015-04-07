@@ -14,7 +14,6 @@ import com.google.gwt.user.client.ui.*;
 public class MathDemo implements EntryPoint {
 	public void onModuleLoad() {
 		GWT.log("OnModule Load");
-		ScriptInjector.fromUrl("http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML").inject();
 		final HTML display = new HTML();
 		display.setStyleName("display");
 
@@ -46,6 +45,6 @@ public class MathDemo implements EntryPoint {
 	}
 
 	private native void typeset(Element element) /*-{
-		MathJax.Hub.Queue(["Typeset", MathJax.Hub, element]);
+		$wnd.jaxIt(element);
 	}-*/;
 }
