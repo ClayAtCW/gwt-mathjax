@@ -1,0 +1,16 @@
+body {
+	background-color: white;
+	color: black;
+	font-family: Arial, sans-serif;
+	font-size: small;
+	margin: 8px;
+}
+
+.display {
+	height: 50px;
+	border: 1px solid gray;
+}
+
+button {
+	margin: 10px;
+}
